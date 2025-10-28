@@ -1,0 +1,156 @@
+@charset "utf-8";
+
+body {
+
+  margin: 0;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  align-items: center;
+}
+button {
+background-color: rgb(85, 138, 6);
+color: white;
+font-weight: bold;
+border-radius: 8px;
+align-self: center;
+cursor: pointer;
+transition-property: transform;
+transition-duration: 1s;
+transition-timing-function: ease-out;
+padding: 10px 15px;
+}
+button:hover{
+  transform: scale(1.05);
+}
+.pc{
+  display: none;
+}
+.first{
+  background:#99e6ff url(bg.png);
+  background-repeat: repeat-x;
+  background-position:center bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding : 64px 30px 0; 
+  text-align: center;
+  a{
+  display: block;
+  text-decoration: none;
+  color: white;
+  background-color: green;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-top:32px;
+  transition-duration: 2s;
+  transition-property: transform;
+  transition-timing-function: linear;
+}
+.p1{
+  margin-top:0;
+}
+h2{
+  margin:0;
+  font-weight: normal;
+}
+img{
+  margin-top:48px;
+  vertical-align: bottom;
+}
+}
+a:hover{
+transform: scale(1.15);
+}
+h3{
+  padding-top:32px;
+  text-align: center;
+  font-weight: normal;
+  font-size: 24px;
+  margin-bottom: 64px;
+}
+h4{
+  font-size: 25px;
+}
+.second{
+  display: flex;
+  flex-direction: column;
+  padding: 30px 30px;
+img{
+  margin:0 auto;
+}
+h4{
+  margin: 0;
+}
+}
+.third{
+  display: flex;
+  flex-direction: column;
+  padding: 30px 30px;
+img{
+  margin:0 auto;
+  padding-top:32px;
+}
+h4{
+  margin: 0;
+}
+}
+.forth{
+  display: flex;
+  flex-direction: column;
+  padding: 30px 30px;
+img{
+  margin:0 auto;
+  padding-top:32px;
+}
+h4{
+  margin: 0;
+}
+}
+footer{
+  display: flex;
+  background-color: black;
+  text-align: center;
+  height: 150px;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  margin-top:60px;
+}
+@media (min-width: 530px) { 
+
+.pc{
+  display: block;
+}
+
+.sp{
+  display: none;
+}
+.first{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap:10px;
+}
+.first div{
+  flex: 1;
+}
+.first img{
+  margin-top: 0;
+}
+.second{
+  flex-direction: row;
+  gap: 20px;
+}
+.third{
+  flex-direction: row-reverse;
+  gap: 20px;
+}
+.forth{
+  flex-direction: row;
+  gap: 20px;
+}
+}
